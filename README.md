@@ -15,8 +15,7 @@
 To run the project locally, follow these steps:
 
 bash
-git clone https://github.com/rahul-adepu/Revent-Assessment.git
-
+    git clone https://github.com/rahul-adepu/Revent-Assessment.git
     cd Revent-Assessment
     npm install
     npm start
