@@ -14,11 +14,12 @@ function App() {
     <div>
 
       <Navbar text={text} setText={setText} searchedData={searchedData} setSearchedData={setSearchedData} />
-      {/* <Products searchedData={searchedData} setSearchedData={setSearchedData} /> */}
 
-      <Filter searchedData={searchedData} setSearchedData={setSearchedData} />
+      <div style={{width:"87%",margin:"auto",display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+        <Filter searchedData={searchedData} setSearchedData={setSearchedData} />
+        <Sort searchedData={searchedData} setSearchedData={setSearchedData} />
+      </div>
 
-      <Sort searchedData={searchedData} setSearchedData={setSearchedData} />
       <DisplayProducts data={searchedData} />
 
     </div>

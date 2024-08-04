@@ -4,18 +4,25 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import ProductsData from '../db.json'
+
+
 export default function Sort(props) {
     const [type, setType] = React.useState('');
     const { searchedData, setSearchedData } = props;
+
     const handleChange = (event) => {
         setType(event.target.value);
     };
-    
-    console.log(searchedData)
+
     React.useEffect(() => {
 
         const updatedSortedList = [...searchedData];
-        
+
+        if (type === "none") {
+            return setSearchedData(ProductsData)
+        }
+
         const sortedProducts = updatedSortedList.sort((a, b) => {
             if (type === 'low-to-high') {
                 return a.price - b.price;
@@ -24,14 +31,13 @@ export default function Sort(props) {
             }
             return 0;
         });
-        console.log("Inside UseEffect: ", sortedProducts)
         setSearchedData(sortedProducts);
 
     }, [type])
 
     return (
         <div>
-            <FormControl sx={{ m: 1, minWidth: 150 }}>
+            <FormControl sx={{ minWidth: 150, marginTop: "85px" }}>
                 <InputLabel id="demo-simple-select-helper-label">Sort By Price</InputLabel>
                 <Select
                     labelId="demo-simple-select-helper-label"
@@ -40,9 +46,7 @@ export default function Sort(props) {
                     label="Sort By Price"
                     onChange={handleChange}
                 >
-                    <MenuItem value="">
-                        <em>None</em>
-                    </MenuItem>
+                    <MenuItem value="none">None</MenuItem>
                     <MenuItem value="high-to-low">High to Low</MenuItem>
                     <MenuItem value="low-to-high">Low to High</MenuItem>
                 </Select>

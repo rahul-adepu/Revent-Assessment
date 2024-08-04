@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -14,7 +11,7 @@ function DisplayProducts({ data }) {
             <Grid container spacing={4} justifyContent="center" alignItems="center">
                 {data.map((product) => (
                     <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
-                        <Card sx={{ maxWidth: 345, margin: 'auto' }}>
+                        <Card sx={{ maxWidth: 345, margin: 'auto', boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
                             <CardActionArea>
                                 <CardMedia
                                     component="img"

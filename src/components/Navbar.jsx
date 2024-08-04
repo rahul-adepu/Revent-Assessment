@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -7,7 +7,6 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import ProductsData from '../db.json'
 
@@ -41,11 +40,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     width: '100%',
     '& .MuiInputBase-input': {
         padding: theme.spacing(1, 1, 1, 0),
-        // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(4)})`,
         transition: theme.transitions.create('width'),
         [theme.breakpoints.up('sm')]: {
-            width: '30ch',
+            width: '34ch',
             '&:focus': {
                 width: '40ch',
             },
@@ -58,15 +56,14 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function Navbar(props) {
     const { text, setText, setSearchedData } = props;
-    
 
-
-   useEffect(() => {
+    useEffect(() => {
         const data = ProductsData.filter((ele) => {
             const element = ele.productName.toLowerCase();
             const texted = text.toLowerCase();
+            const description = ele.shortDescription.toLowerCase();
 
-            if (element.includes(texted)) {
+            if (element.includes(texted) || description.includes(texted)) {
                 return true;
             }
             return false
@@ -77,22 +74,21 @@ export default function Navbar(props) {
         }
     }, [text])
 
-    const handleTextChange = (e)=>{
+    const handleTextChange = (e) => {
         setText(e.target.value)
     }
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="fixed" top="0">
                 <Toolbar>
                     <IconButton
                         size="large"
                         edge="start"
                         color="inherit"
                         aria-label="open drawer"
-                        sx={{ mr: 2 }}
                     >
-                        <MenuIcon />
+                        <img src='https://cdn-icons-png.flaticon.com/512/3273/3273898.png' width="30px" alt='Company Logo' />
                     </IconButton>
                     <Typography
                         variant="h6"
@@ -107,9 +103,9 @@ export default function Navbar(props) {
                             <SearchIcon />
                         </SearchIconWrapper>
                         <StyledInputBase
-                        value={text}
-                        onChange={handleTextChange}
-                            placeholder="Search Product By Name"
+                            value={text}
+                            onChange={handleTextChange}
+                            placeholder="Search Product By Name/Description"
                             inputProps={{ 'aria-label': 'search' }}
                         />
                     </Search>
