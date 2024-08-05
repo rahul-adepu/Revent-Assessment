@@ -1,162 +1,164 @@
-[
-  {
-    "id": 1,
-    "image": "https://img.freepik.com/free-photo/glasses-with-slightly-rounded-frame_23-2150670762.jpg?semt=sph",
-    "productName": "Sunglasses",
-    "shortDescription": "Stylish and protective",
-    "type": "clothing",
-    "price": 29.99
-  },
-  {
-    "id": 2,
-    "image": "https://img.freepik.com/premium-photo/yellow-black-vacuum-with-red-handle_221812-2935.jpg?semt=ais_hybrid",
-    "productName": "Vacuum Cleaner",
-    "shortDescription": "Keep your home clean",
-    "type": "home appliances",
-    "price": 199.99
-  },
-  {
-    "id": 3,
-    "image": "https://img.freepik.com/free-photo/still-life-rendering-jackets-display_23-2149745031.jpg?semt=sph",
-    "productName": "Jacket",
-    "shortDescription": "Warm and cozy jacket",
-    "type": "clothing",
-    "price": 89.99
-  },
-  {
-    "id": 4,
-    "image": "https://img.freepik.com/free-photo/stylish-golden-watch-white-surface_181624-27078.jpg?semt=sph",
-    "productName": "Watch",
-    "shortDescription": "Stylish wristwatch",
-    "type": "clothing",
-    "price": 149.99
-  },
-  {
-    "id": 5,
-    "image": "https://img.freepik.com/free-photo/fashion-woman-with-clothes_1203-8302.jpg?semt=sph",
-    "productName": "Dress",
-    "shortDescription": "Elegant evening dress",
-    "type": "clothing",
-    "price": 79.99
-  },
-  {
-    "id": 6,
-    "image": "https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg?semt=sph",
-    "productName": "Headphones",
-    "shortDescription": "Noise-cancelling headphones",
-    "type": "electronics",
-    "price": 199.99
-  },
-  {
-    "id": 7,
-    "image": "https://img.freepik.com/free-photo/portrait-female-legs-jeans_171337-11954.jpg?semt=sph",
-    "productName": "Jeans",
-    "shortDescription": "Stylish denim jeans",
-    "type": "clothing",
-    "price": 49.99
-  },
-  {
-    "id": 8,
-    "image": "https://img.freepik.com/free-photo/sports-shoe-pair-design-illustration-generated-by-ai_188544-19642.jpg?semt=sph",
-    "productName": "Shoes",
-    "shortDescription": "Comfortable casual shoes",
-    "type": "clothing",
-    "price": 39.99
-  },
-  {
-    "id": 9,
-    "image": "https://img.freepik.com/premium-psd/composition-tablet-case-mock-up_23-2148944346.jpg?semt=ais_hybrid",
-    "productName": "Tablet Case",
-    "shortDescription": "Protect your tablet",
-    "type": "electronics",
-    "price": 19.99
-  },
-  {
-    "id": 10,
-    "image": "https://img.freepik.com/free-vector/microwave-oven-with-light-inside-isolated-white-background-kitchen-appliances_134830-658.jpg?semt=sph",
-    "productName": "Microwave",
-    "shortDescription": "Quick and efficient cooking",
-    "type": "home appliances",
-    "price": 129.99
-  },
-  {
-    "id": 11,
-    "image": "https://img.freepik.com/free-vector/minimalist-small-business-big-dreams-t-shirt_742173-7158.jpg?semt=ais_hybrid",
-    "productName": "T-Shirt",
-    "shortDescription": "Comfortable cotton t-shirt",
-    "type": "clothing",
-    "price": 19.99
-  },
-  {
-    "id": 12,
-    "image": "https://img.freepik.com/free-vector/red-black-open-refrigerator-with-products_1284-23311.jpg?semt=sph",
-    "productName": "Refrigerator",
-    "shortDescription": "Spacious and energy-efficient",
-    "type": "home appliances",
-    "price": 899.99
-  },
-  {
-    "id": 13,
-    "image": "https://img.freepik.com/free-photo/camera-equipment-capturing-single-macro-object-generative-ai_188544-12096.jpg?semt=sph",
-    "productName": "Camera",
-    "shortDescription": "Capture high-quality photos and videos",
-    "type": "electronics",
-    "price": 499.99
-  },
-  {
-    "id": 14,
-    "image": "https://img.freepik.com/free-photo/brown-retro-electronic-blender-device_23-2151002846.jpg?semt=sph",
-    "productName": "Blender",
-    "shortDescription": "Perfect for smoothies and soups",
-    "type": "home appliances",
-    "price": 79.99
-  },
-  {
-    "id": 15,
-    "image": "https://img.freepik.com/free-photo/air-conditioner-mounted-white-wall_53876-128235.jpg?semt=ais_hybrid",
-    "productName": "Air Conditioner",
-    "shortDescription": "Stay cool during summer",
-    "type": "home appliances",
-    "price": 499.99
-  },
-  {
-    "id": 16,
-    "image": "https://img.freepik.com/free-photo/futuristic-computer-monitors-display-galaxy-glowing-data-generated-by-ai_188544-29811.jpg?semt=sph",
-    "productName": "Tablet",
-    "shortDescription": "Portable and powerful tablet",
-    "type": "electronics",
-    "price": 329.99
-  },
-  {
-    "id": 17,
-    "image": "https://img.freepik.com/free-vector/realistic-smartphone-display-with-different-apps_23-2148374061.jpg?semt=sph",
-    "productName": "Smartphone",
-    "shortDescription": "Latest model with all the new features",
-    "type": "electronics",
-    "price": 799.99
-  },
-  {
-    "id": 18,
-    "image": "https://img.freepik.com/free-photo/fashion-shoes-sneakers_1203-7529.jpg?semt=sph",
-    "productName": "Sneakers",
-    "shortDescription": "Comfortable running shoes",
-    "type": "clothing",
-    "price": 59.99
-  },
-  {
-    "id": 19,
-    "image": "https://img.freepik.com/premium-photo/laptop-isolated-white-background-3d-rendering-computer-generated-image_1142-50429.jpg?semt=sph",
-    "productName": "Laptop",
-    "shortDescription": "Powerful laptop with high performance",
-    "type": "electronics",
-    "price": 1199.99
-  },
-  {
-    "id": 20,
-    "image": "https://img.freepik.com/free-photo/rendering-smart-home-device_23-2151039303.jpg?semt=sph",
-    "productName": "Smartwatch",
-    "shortDescription": "Track your fitness and notifications",
-    "type": "electronics",
-    "price": 299.99
-  }
-]
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://img.freepik.com/free-photo/glasses-with-slightly-rounded-frame_23-2150670762.jpg?semt=sph",
+      "productName": "Sunglasses",
+      "shortDescription": "Stylish and protective",
+      "type": "clothing",
+      "price": 29.99
+    },
+    {
+      "id": 2,
+      "image": "https://img.freepik.com/premium-photo/yellow-black-vacuum-with-red-handle_221812-2935.jpg?semt=ais_hybrid",
+      "productName": "Vacuum Cleaner",
+      "shortDescription": "Keep your home clean",
+      "type": "home appliances",
+      "price": 199.99
+    },
+    {
+      "id": 3,
+      "image": "https://img.freepik.com/free-photo/still-life-rendering-jackets-display_23-2149745031.jpg?semt=sph",
+      "productName": "Jacket",
+      "shortDescription": "Warm and cozy jacket",
+      "type": "clothing",
+      "price": 89.99
+    },
+    {
+      "id": 4,
+      "image": "https://img.freepik.com/free-photo/stylish-golden-watch-white-surface_181624-27078.jpg?semt=sph",
+      "productName": "Watch",
+      "shortDescription": "Stylish wristwatch",
+      "type": "clothing",
+      "price": 149.99
+    },
+    {
+      "id": 5,
+      "image": "https://img.freepik.com/free-photo/fashion-woman-with-clothes_1203-8302.jpg?semt=sph",
+      "productName": "Dress",
+      "shortDescription": "Elegant evening dress",
+      "type": "clothing",
+      "price": 79.99
+    },
+    {
+      "id": 6,
+      "image": "https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg?semt=sph",
+      "productName": "Headphones",
+      "shortDescription": "Noise-cancelling headphones",
+      "type": "electronics",
+      "price": 199.99
+    },
+    {
+      "id": 7,
+      "image": "https://img.freepik.com/free-photo/portrait-female-legs-jeans_171337-11954.jpg?semt=sph",
+      "productName": "Jeans",
+      "shortDescription": "Stylish denim jeans",
+      "type": "clothing",
+      "price": 49.99
+    },
+    {
+      "id": 8,
+      "image": "https://img.freepik.com/free-photo/sports-shoe-pair-design-illustration-generated-by-ai_188544-19642.jpg?semt=sph",
+      "productName": "Shoes",
+      "shortDescription": "Comfortable casual shoes",
+      "type": "clothing",
+      "price": 39.99
+    },
+    {
+      "id": 9,
+      "image": "https://img.freepik.com/premium-psd/composition-tablet-case-mock-up_23-2148944346.jpg?semt=ais_hybrid",
+      "productName": "Tablet Case",
+      "shortDescription": "Protect your tablet",
+      "type": "electronics",
+      "price": 19.99
+    },
+    {
+      "id": 10,
+      "image": "https://img.freepik.com/free-vector/microwave-oven-with-light-inside-isolated-white-background-kitchen-appliances_134830-658.jpg?semt=sph",
+      "productName": "Microwave",
+      "shortDescription": "Quick and efficient cooking",
+      "type": "home appliances",
+      "price": 129.99
+    },
+    {
+      "id": 11,
+      "image": "https://img.freepik.com/free-vector/minimalist-small-business-big-dreams-t-shirt_742173-7158.jpg?semt=ais_hybrid",
+      "productName": "T-Shirt",
+      "shortDescription": "Comfortable cotton t-shirt",
+      "type": "clothing",
+      "price": 19.99
+    },
+    {
+      "id": 12,
+      "image": "https://img.freepik.com/free-vector/red-black-open-refrigerator-with-products_1284-23311.jpg?semt=sph",
+      "productName": "Refrigerator",
+      "shortDescription": "Spacious and energy-efficient",
+      "type": "home appliances",
+      "price": 899.99
+    },
+    {
+      "id": 13,
+      "image": "https://img.freepik.com/free-photo/camera-equipment-capturing-single-macro-object-generative-ai_188544-12096.jpg?semt=sph",
+      "productName": "Camera",
+      "shortDescription": "Capture high-quality photos and videos",
+      "type": "electronics",
+      "price": 499.99
+    },
+    {
+      "id": 14,
+      "image": "https://img.freepik.com/free-photo/brown-retro-electronic-blender-device_23-2151002846.jpg?semt=sph",
+      "productName": "Blender",
+      "shortDescription": "Perfect for smoothies and soups",
+      "type": "home appliances",
+      "price": 79.99
+    },
+    {
+      "id": 15,
+      "image": "https://img.freepik.com/free-photo/air-conditioner-mounted-white-wall_53876-128235.jpg?semt=ais_hybrid",
+      "productName": "Air Conditioner",
+      "shortDescription": "Stay cool during summer",
+      "type": "home appliances",
+      "price": 499.99
+    },
+    {
+      "id": 16,
+      "image": "https://img.freepik.com/free-photo/futuristic-computer-monitors-display-galaxy-glowing-data-generated-by-ai_188544-29811.jpg?semt=sph",
+      "productName": "Tablet",
+      "shortDescription": "Portable and powerful tablet",
+      "type": "electronics",
+      "price": 329.99
+    },
+    {
+      "id": 17,
+      "image": "https://img.freepik.com/free-vector/realistic-smartphone-display-with-different-apps_23-2148374061.jpg?semt=sph",
+      "productName": "Smartphone",
+      "shortDescription": "Latest model with all the new features",
+      "type": "electronics",
+      "price": 799.99
+    },
+    {
+      "id": 18,
+      "image": "https://img.freepik.com/free-photo/fashion-shoes-sneakers_1203-7529.jpg?semt=sph",
+      "productName": "Sneakers",
+      "shortDescription": "Comfortable running shoes",
+      "type": "clothing",
+      "price": 59.99
+    },
+    {
+      "id": 19,
+      "image": "https://img.freepik.com/premium-photo/laptop-isolated-white-background-3d-rendering-computer-generated-image_1142-50429.jpg?semt=sph",
+      "productName": "Laptop",
+      "shortDescription": "Powerful laptop with high performance",
+      "type": "electronics",
+      "price": 1199.99
+    },
+    {
+      "id": 20,
+      "image": "https://img.freepik.com/free-photo/rendering-smart-home-device_23-2151039303.jpg?semt=sph",
+      "productName": "Smartwatch",
+      "shortDescription": "Track your fitness and notifications",
+      "type": "electronics",
+      "price": 299.99
+    }
+  ]
+}

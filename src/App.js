@@ -1,15 +1,16 @@
 import './App.css';
 import Filter from './components/Filter';
 import { useState } from 'react';
-import ProductsData from './db.json'
 import Sort from './components/Sort';
 import Navbar from './components/Navbar';
 import DisplayProducts from './components/DisplayProducts';
+import Home from './components/Home';
 
 
 function App() {
-  const [searchedData, setSearchedData] = useState(ProductsData);
+  const [searchedData, setSearchedData] = useState([]);
   const [text, setText] = useState("");
+
   return (
     <div>
 
@@ -20,6 +21,8 @@ function App() {
         <Sort searchedData={searchedData} setSearchedData={setSearchedData} />
       </div>
 
+      <Home searchedData={searchedData} setSearchedData={setSearchedData} />
+      
       <DisplayProducts data={searchedData} />
 
     </div>

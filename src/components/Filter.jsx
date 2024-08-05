@@ -1,38 +1,34 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import ProductsData from '../db.json'
+import { getProductsData } from '../backend/api';
 export default function Filter(props) {
-    const [type, setType] = React.useState('');
+    const [filter, setFilter] = React.useState('');
     const { setSearchedData } = props;
 
     const handleChange = (event) => {
-        setType(event.target.value);
+        setFilter(event.target.value);
     };
 
-    React.useEffect(() => {
-
-        if (type === "none") {
-            return setSearchedData(ProductsData)
-        }
-        
-        const filtered = ProductsData.filter((ele) => {
-            const element = ele.type.toLowerCase();
-            const selectedData = type.toLowerCase();
-
-            if (element.includes(selectedData)) {
-                return true;
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const params = {};
+                if (filter) {
+                    params.type = filter;
+                }
+                const response = await getProductsData(params);
+                setSearchedData(response.data);
+            } catch (error) {
+                console.log(error);
             }
-            return false
-        })
-        if (filtered) {
-            setSearchedData(filtered);
-        }
+        };
 
-    }, [type])
+        fetchData();
+    }, [filter])
 
     return (
         <div>
@@ -41,7 +37,7 @@ export default function Filter(props) {
                 <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
-                    value={type}
+                    value={filter}
                     label="Filter By Type"
                     onChange={handleChange}
                 >

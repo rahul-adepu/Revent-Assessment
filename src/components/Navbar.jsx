@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -8,7 +8,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import ProductsData from '../db.json'
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -55,24 +54,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 export default function Navbar(props) {
-    const { text, setText, setSearchedData } = props;
+    const { text, setText } = props;
 
-    useEffect(() => {
-        const data = ProductsData.filter((ele) => {
-            const element = ele.productName.toLowerCase();
-            const texted = text.toLowerCase();
-            const description = ele.shortDescription.toLowerCase();
-
-            if (element.includes(texted) || description.includes(texted)) {
-                return true;
-            }
-            return false
-        })
-
-        if (data) {
-            setSearchedData(data)
-        }
-    }, [text])
+    
 
     const handleTextChange = (e) => {
         setText(e.target.value)
@@ -96,7 +80,7 @@ export default function Navbar(props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        Revent AI
+                        Smart Living Store
                     </Typography>
                     <Search>
                         <SearchIconWrapper>
